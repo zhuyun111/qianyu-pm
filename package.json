@@ -1,0 +1,51 @@
+{
+  "name": "@qianyu/pm-core",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "千羽PM 开源核心：项目列表 / 项目主页 / 任务排期（WBS 分解、排列顺序、进度规划）",
+  "license": "AGPL-3.0",
+  "homepage": "https://www.qianyupm.top/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daisy1995/qianyu-pm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daisy1995/qianyu-pm/issues"
+  },
+  "keywords": [
+    "project-management",
+    "gantt",
+    "wbs",
+    "scheduler",
+    "react"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./db": "./src/utils/db.js",
+    "./styles.css": "./src/index.css"
+  },
+  "dependencies": {
+    "@tiptap/core": "^2.27.3",
+    "@tiptap/extension-placeholder": "^2.27.3",
+    "@tiptap/pm": "^2.27.3",
+    "@tiptap/react": "^2.27.3",
+    "@tiptap/starter-kit": "^2.27.3",
+    "dagre": "^0.8.5",
+    "docx": "^9.7.1",
+    "exceljs": "^4.4.0",
+    "marked": "^18.0.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.15.1",
+    "reactflow": "^11.11.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.12"
+  }
+}
